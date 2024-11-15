@@ -1,9 +1,123 @@
-p {
-	color: blue;
+:root {
+	/*font families*/
+	--heading-font: 'Bigshot One';
+	--subheading-font: 'Prompt';
+	--body-font: 'Montserrat';
+
+	/* color style */
+	--text-black: black;
+	--text-white: white;
+	--heading-bg-color: #F8F67D;
+	--secondary-heading-color: #BFE6E9;
+
+	/* border box style */
+	--border-box: 3px solid #000;
+
+	/* section height */
+	--section-height: 40px;
+
+	/* padding */
+	--padding-large: 40px 20px;
+	--padding-small: 20px 20px;
 }
 
-body {
-	font-family: fantasy;
+/* header style */
+header {
+	color: var(--text-black);
+	background-color: var(--heading-bg-color);
+    text-align: left;
+}
+
+header h1 {
+	border-bottom: var(--border-box);
+	padding: var(--padding-large);
+	font-size: 72px;
+	font-family: var(--heading-font);
+	font-weight: bold;
+}
+
+#subtitle {
+	border-bottom: var(--border-box);
+	padding: var(--padding-small);
+	font-size: 28px;
+	font-style: italic;
+	font-family: var(--subheading-font);
+	background-color: var(--secondary-heading-color);
+}
+
+#intro {
+	/* border-bottom: var(--border-box); */
+	padding: var(--padding-small);
+	font-size: 16px;
+	font-family: var(--body-font);
+}
+
+/* section heading style */
+.color-section {
+	text-align: center;
+	border-top: var(--border-box);
+}
+
+h2 {
+	/* make heading align vertically */
+	display: flex;
+  	justify-content: center; 
+  	align-items: center;  
+
+	font-family: var(--heading-font);
+	font-size: 20px;
+
+	height: var(--section-height);
+	color: var(--text-white);
+}
+
+/* specific section heading color */
+.red h2 {
+	background-color: #FE012C;
+}
+
+.yellow h2 {
+	background-color: #F8F67D;
+	color: var(--text-black);
+}
+
+.green h2 {
+	background-color: #1A5446;
+}
+
+.blue h2 {
+	background-color: #7FCBE5;
+}
+
+.white h2 {
+	background-color: #E5E5E5;
+	color: var(--text-black);
+}
+
+.black h2 {
 	background-color: black;
-	color: white;
+}
+
+/* section body text */
+.color-section p {
+	font-family: var(--body-font);
+	padding: 0 20px 30px 20px;
+}
+
+blockquote {
+	font-family: var(--subheading-font);
+	font-size: 24px;
+	padding: var(--padding-large);
+}
+
+/* footer style */
+footer {
+	text-align: center;
+    margin-top: 20px;
+	padding: var(--padding-small);
+	font-family: var(--subheading-font);
+    font-size: 20px;
+    color: var(--text-black);
+	background-color: var(--heading-bg-color);
+	border-bottom: 10px solid black;
 }

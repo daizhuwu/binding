@@ -110,3 +110,14 @@ blockquote {
 	padding: var(--padding-large);
 }
 
+/* footer style */
+footer {
+	text-align: center;
+    margin-top: 20px;
+	padding: var(--padding-small);
+	font-family: var(--subheading-font);
+    font-size: 20px;
+    color: var(--text-black);
+	background-color: var(--heading-bg-color);
+	border-bottom: 10px solid black;
+}
