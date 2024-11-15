@@ -16,6 +16,10 @@
 
 	/* section height */
 	--section-height: 40px;
+
+	/* padding */
+	--padding-large: 40px 20px;
+	--padding-small: 20px 20px;
 }
 
 /* header style */
@@ -27,7 +31,7 @@ header {
 
 header h1 {
 	border-bottom: var(--border-box);
-	padding: 40px 20px;
+	padding: var(--padding-large);
 	font-size: 72px;
 	font-family: var(--heading-font);
 	font-weight: bold;
@@ -35,7 +39,7 @@ header h1 {
 
 #subtitle {
 	border-bottom: var(--border-box);
-	padding: 20px 20px;
+	padding: var(--padding-small);
 	font-size: 28px;
 	font-style: italic;
 	font-family: var(--subheading-font);
@@ -43,7 +47,7 @@ header h1 {
 
 #intro {
 	/* border-bottom: var(--border-box); */
-	padding: 20px 20px;
+	padding: var(--padding-small);
 	font-size: 16px;
 	font-family: var(--body-font);
 }
@@ -61,6 +65,7 @@ h2 {
   	align-items: center;  
 
 	font-family: var(--heading-font);
+	font-size: 20px;
 
 	height: var(--section-height);
 	color: var(--text-white);
@@ -92,3 +97,16 @@ h2 {
 .black h2 {
 	background-color: black;
 }
+
+/* section body text */
+.color-section p {
+	font-family: var(--body-font);
+	padding: 0 20px 30px 20px;
+}
+
+blockquote {
+	font-family: var(--subheading-font);
+	font-size: 24px;
+	padding: var(--padding-large);
+}
+
