@@ -1,7 +1,129 @@
-p {
-	color: green;
+:root {
+	/*font families*/
+	--heading-font: 'Impact';
+	--subheading-font: 'Poppins';
+	--body-font: 'Lora';
+
+	/* color style */
+	--text-black: black;
+	--text-white: white;
+	--heading-bg-color: #A686D2;
+	--secondary-heading-color: #CAB6E4;
+	--third-heading-color: #E4DBF1;
+
+	/* border box style */
+	--border-box: 3px solid #000;
+
+	/* section height */
+	--section-height: 40px;
+
+	/* padding */
+	--padding-large: 40px 20px;
+	--padding-small: 20px 20px;
 }
 
 body {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 16px;
+}
+
+/* header style */
+header {
+	color: var(--text-black);
+	background-color: var(--heading-bg-color);
+    text-align: left;
+}
+
+header h1 {
+	border-bottom: var(--border-box);
+	padding: var(--padding-large);
+	font-size: 72px;
+	font-family: var(--heading-font);
+	font-weight: bold;
+}
+
+#subtitle {
+	border-bottom: var(--border-box);
+	padding: var(--padding-small);
+	font-size: 28px;
+	font-style: italic;
+	font-family: var(--subheading-font);
+	background-color: var(--secondary-heading-color);
+}
+
+#intro {
+	/* border-bottom: var(--border-box); */
+	padding: var(--padding-small);
+	font-size: 16px;
+	font-family: var(--body-font);
+	background-color: var(--third-heading-color);
+}
+
+/* section heading style */
+.color-section {
+	text-align: center;
+	border-top: var(--border-box);
+}
+
+h2 {
+	/* make heading align vertically */
+	display: flex;
+  	justify-content: center; 
+  	align-items: center;  
+
+	font-family: var(--heading-font);
+	font-size: 20px;
+
+	height: var(--section-height);
+	color: var(--text-white);
+}
+
+/* specific section heading color */
+.red h2 {
+	background-color: #C96868;
+}
+
+.yellow h2 {
+	background-color: #FADFA1;
+	color: var(--text-black);
+}
+
+.green h2 {
+	background-color: #7EACB5;
+}
+
+.blue h2 {
+	background-color: #8EACCD;
+}
+
+.white h2 {
+	background-color: #E5E5E5;
+	color: var(--text-black);
+}
+
+.black h2 {
+	background-color: black;
+}
+
+/* section body text */
+.color-section p {
+	font-family: var(--body-font);
+	padding: 0 20px 30px 20px;
+}
+
+blockquote {
+	font-family: var(--subheading-font);
+	font-size: 24px;
+	padding: var(--padding-large);
+}
+
+/* footer style */
+footer {
+	text-align: center;
+    margin-top: 20px;
+	padding: var(--padding-small);
+	font-family: var(--subheading-font);
+    font-size: 20px;
+    color: var(--text-black);
+	background-color: var(--heading-bg-color);
+	border-bottom: 10px solid black;
 }
