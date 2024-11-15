@@ -2,10 +2,10 @@
 * {margin-top: 0px;}
 
 :root {
-	--base-size: 20px;
+	--body-size: 18px;
 }
 
 body {
-	font-size: var(--base-size);
+	font-size: var(--body-size);
 }
 

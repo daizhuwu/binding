@@ -7,15 +7,20 @@
 	--body-font: 'Monaco';
 
 	/* color style */
-	--text-color: black;
+	--text-black: black;
+	--text-white: white;
 	--heading-bg-color: #2575FF;
 
 	/* border box style */
 	--border-box: 3px solid #000;
+
+	/* section height */
+	--section-height: 40px;
 }
 
+/* header style */
 header {
-	color: var(--text-color);
+	color: var(--text-black);
 	background-color: var(--heading-bg-color);
     text-align: left;
 }
@@ -32,15 +37,58 @@ header h1 {
 	border-bottom: var(--border-box);
 	padding: 20px 20px;
 	font-size: 28px;
+	font-style: italic;
 	font-family: var(--subheading-font);
 }
 
 #intro {
-	border-bottom: var(--border-box);
+	/* border-bottom: var(--border-box); */
 	padding: 20px 20px;
 	font-size: 16px;
 	font-family: var(--body-font);
 }
 
+/* section heading style */
+.color-section {
+	text-align: center;
+	border-top: var(--border-box);
+}
 
+h2 {
+	/* make heading align vertically */
+	display: flex;
+  	justify-content: center; 
+  	align-items: center;  
 
+	font-family: var(--heading-font);
+
+	height: var(--section-height);
+	color: var(--text-white);
+}
+
+/* specific section heading color */
+.red h2 {
+	background-color: #FE012C;
+}
+
+.yellow h2 {
+	background-color: #F5FE04;
+	color: var(--text-black);
+}
+
+.green h2 {
+	background-color: #015F2F;
+}
+
+.blue h2 {
+	background-color: #0101FE;
+}
+
+.white h2 {
+	background-color: #E5E5E5;
+	color: var(--text-black);
+}
+
+.black h2 {
+	background-color: black;
+}
