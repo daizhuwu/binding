@@ -1,11 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); */
 
 :root {
 	/*font families*/
-	--heading-font-family: 'Arsenal';
-	--subheading-font-family: 'Aleo';
-	--body-font-family: 'Monaco';
+	--heading-font: 'Arsenal';
+	--subheading-font: 'Aleo';
+	--body-font: 'Monaco';
 
 	/* color style */
 	--text-color: black;
+	--heading-bg-color: #2575FF;
+
+	/* border box style */
+	--border-box: 3px solid #000;
 }
+
+header {
+	color: var(--text-color);
+	background-color: var(--heading-bg-color);
+    text-align: left;
+}
+
+header h1 {
+	border-bottom: var(--border-box);
+	padding: 40px 20px;
+	font-size: 72px;
+	font-family: var(--heading-font);
+	font-weight: bold;
+}
+
+#subtitle {
+	border-bottom: var(--border-box);
+	padding: 20px 20px;
+	font-size: 28px;
+	font-family: var(--subheading-font);
+}
+
+#intro {
+	border-bottom: var(--border-box);
+	padding: 20px 20px;
+	font-size: 16px;
+	font-family: var(--body-font);
+}
+
+
+
