@@ -23,10 +23,28 @@
 
 /* header style */
 header {
-	color: var(--text-black);
-	background-color: var(--heading-bg-color);
+	/* color: var(--text-black);
+	background-color: var(--heading-bg-color); */
     text-align: left;
+
+	/* gradient animation */ 
+	background: linear-gradient(120deg, #f7941d, #4b88a2);
+	background-size: 400% 400%;
+	animation: gradient-animation 8s ease infinite;
 }
+
+/* gradient animation */
+@keyframes gradient-animation {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
 
 header h1 {
 	border-bottom: var(--border-box);
@@ -73,11 +91,11 @@ h2 {
 
 /* specific section heading color */
 .red h2 {
-	background-color: #FE012C;
+	background-color: #AE1B07;
 }
 
 .yellow h2 {
-	background-color: #F8F67D;
+	background-color: #DFC21F;
 	color: var(--text-black);
 }
 
@@ -85,20 +103,13 @@ h2 {
 	background-color: #1A5446;
 }
 
-.blue h2 {
-	background-color: #7FCBE5;
-}
-
-.white h2 {
-	background-color: #E5E5E5;
-	color: var(--text-black);
-}
-
-.black h2 {
-	background-color: black;
-}
-
 /* section body text */
+section p {
+	font-size: 1.2em;
+	font-family: var(--body-font);
+	padding: 20px 20px 30px 20px;
+}
+
 .color-section p {
 	font-family: var(--body-font);
 	padding: 0 20px 30px 20px;
@@ -118,6 +129,6 @@ footer {
 	font-family: var(--subheading-font);
     font-size: 20px;
     color: var(--text-black);
-	background-color: var(--heading-bg-color);
+	background-color: #DFC21F;
 	border-bottom: 10px solid black;
 }
