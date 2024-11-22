@@ -29,8 +29,25 @@ body {
 /* header style */
 header {
 	color: var(--text-black);
-	background-color: var(--heading-bg-color);
+	/* background-color: var(--heading-bg-color); */
     text-align: left;
+
+	/* gradient animation */
+	background: linear-gradient(180deg, #2D8CF0, #48C774);
+  	background-size: 200% 200%;
+  	animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+	0% {
+	background: linear-gradient(180deg, #2D8CF0, #48C774);
+	}
+	50% {
+	background: linear-gradient(180deg, #48C774, #2D8CF0);
+	}
+	100% {
+	background: linear-gradient(180deg, #2D8CF0, #48C774);
+	}
 }
 
 header h1 {
@@ -47,7 +64,7 @@ header h1 {
 	font-size: 28px;
 	font-style: italic;
 	font-family: var(--subheading-font);
-	background-color: var(--secondary-heading-color);
+	/* background-color: var(--secondary-heading-color); */
 }
 
 #intro {
@@ -55,7 +72,7 @@ header h1 {
 	padding: var(--padding-small);
 	font-size: 16px;
 	font-family: var(--body-font);
-	background-color: var(--third-heading-color);
+	/* background-color: var(--third-heading-color); */
 }
 
 /* section heading style */

@@ -28,10 +28,13 @@ body {
 	font-size: 40px;
 	font-weight: bold;
 	cursor: pointer;
-	border: #000 6px solid;
+	border: #fff 6px solid;
+
+	background-color: black;
+	color: white;
   }
   
-  .nav-item-blue {
+  /* .nav-item-blue {
 	background-color: #007BFF;
   }
   
@@ -45,8 +48,8 @@ body {
   
   .nav-item-black {
 	background-color: #000;
-  }
+  } */
   
   .nav-item:hover {
-	color: #000;
+	color: #007BFF;
   }
