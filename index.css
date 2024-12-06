@@ -322,7 +322,12 @@
 
   .colophon-description p {
     font-size: 28px;
-  }
+	}
+	
+	.arrow-left, .arrow-right {
+		font-size: 28px;
+		font-weight: bold;
+	}
 
   .color-nav {
     width: 1200px;
