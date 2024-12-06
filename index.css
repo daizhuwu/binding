@@ -1,117 +1,279 @@
-:root {
+/* Reset and Global Settings */
+* {
 	margin: 0;
 	padding: 0;
-
-	/*font families*/
-	--heading-font: 'Arsenal';
-	--subheading-font: 'Aleo';
-	--body-font: 'Monaco';
+	box-sizing: border-box;
   }
-
+  
   body {
-	font-family: 'Arial', sans-serif;
-	color: white;
-	background-color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-  }
-
- #container {
-	width: 1400px;
+	font-family: Arial, sans-serif;
+	background-color: #f4ede6;
+	color: #000;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: left;
-	margin: 4em;
+	padding: 20px;
   }
-
-  /* Header  */
-  header h1 {
-	font-size: 8rem;
-	margin-bottom: 4rem;
-	font-family: var(--heading-font);
-  }
-
-  header p {
-	font-size: 1.2rem;
-	font-family: var(--body-font);
-  }
-
-  /* Cards */
-  .cards {
-	margin-top: 6rem;
-	margin-bottom: 4rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-  }
-
-  .card {
-	/* width: 100%; */
-	width: 400px;
-	height: 400px;
-	display: flex;
-	align-items: center;
-	gap: 2em;
-	border-radius: 4px;
-	position: relative;
-  }
-
-  .card .dot {
-	width: 20px;
-	height: 20px;
-	background-color: black;
-	border-radius: 50%;
-	position: absolute;
-	top: 15px;
-	left: 15px;
-  }
-
-  .card h2 {
-	font-size: 3.2rem;
-	/* margin-left: 2rem; */
-	margin-right: 1em;
-	margin-top: 2em;
-	text-align: right;
-	font-family: var(--body-font);
-  }
-
-  /* Cards color */
-  .card.blue {
-	background-color: #2868c7;
-  }
-
-  .card.green {
-	background-color: #356c3c;
-  }
-
-  .card.red {
-	background-color: #c43c3c;
-  }
-
-  /* footer  */
-  footer {
+  
+  /* Header Section */
+  header {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	margin-top: 2rem;
-	font-size: 1.4rem;
-	border-top: 1px solid #fff;
-	padding-top: 0.5rem;
-	font-family: var(--heading-font);
+	align-items: center;
+	width: 340px;
+	margin-bottom: 8px;
+  }
+  
+  header p {
+	padding: 6px 10px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	text-align: center;
+	background-color: #f4ede6;
+  }
+  
+  .header-left {
+	flex-grow: 2; /* Increase the width of the left element */
+	margin-right:4px;
+  }
+  
+  .header-right {
+	flex-grow: 1; /* Keep the right element smaller */
+  }
+  
+  /* Main Title Section */
+  .title-container {
+	width: 340px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background-color: #f4ede6;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 16px;
+  }
+  
+  .title-container h1 {
+	font-size: 36px;
+	line-height: 1.4;
+  }
+  
+  .line {
+	display: block;
+	margin-bottom: 8px;
+  }
+  
+  hr {
+	border: none;
+	border-top: 1px solid #000;
+	margin: 8px 0;
+  }
+  
+  .highlight-red {
+	color: red;
+  }
+  
+  .highlight-blue {
+	color: blue;
+  }
+  
+  .subtitle {
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+  }
+  
+  /* Colophon Section */
+  .colophon-container {
+	display: flex;
+	justify-content: space-around; /* Distribute space evenly but closer */
+	align-items: center;
+	width: 340px;
+	margin: 16px 0;
+	padding: 12px 0;
+	background-color: #000;
+	border-radius: 30px;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 8px; /* Reduced margin for tighter spacing */
+  }
+  
+  .colophon-text {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+  }
+  
+  /* Colophon Description */
+  .colophon-description {
+	width: 340px;
+	padding: 16px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background-color: #f4ede6;
+	margin: 8px 0; /* Add 8px margin between colophon text box and navigation */
+  }
+
+  .colophon-number {
+	font-size: 14px;
+	margin-left: 0; /* Align to the left side */
+  }
+
+  .colophon-button {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 0; /* Align to the right side */
+  }
+  
+  .colophon-description p {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 12px;
+  }
+  
+  /* footer footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  } */
+
+  .colophon-description footer {
+	display: flex;
+	justify-content: space-between; /* Spread elements to opposite sides */
+	align-items: center; /* Align elements vertically */
+	margin-top: 8px;
+  }
+  
+  footer span {
+	font-size: 14px;
+  }
+  
+  footer button {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  /* Navigation Bar */
+  .color-nav {
+	width: 340px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px; /* Spacing between navigation items */
+	margin-bottom: 16px;
+  }
+  
+  .nav-item {
+	text-decoration: none;
+	padding: 20px;
+	border-radius: 8px;
+	font-weight: bold;
+	text-align: left;
+
+	height: 240px;
+
+	display: flex;
+	flex-direction: column; /* Stack elements vertically */
+	/* line-height: 1.5; */
+  }
+
+  .nav-number {
+	  font-size: 18px;
+	  margin-bottom: 32px;
+  }
+
+  .nav-text {
+	font-size: 60px;
+	line-height: -40px;
+  }
+  
+  .color-theory {
+	background-color: #ff3333;
+	color: #fff;
+  }
+  
+  .color-gradient {
+	background-color: #ffdd00;
+	color: #000;
+  }
+  
+  .color-politics {
+	background-color: #0033ff;
+	color: #fff;
+  }
+  
+  /* Footer Section */
+  .footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 340px;
+	margin-top: 8px;
   }
   
   .footer-item {
-	flex: 1;
-	text-align: center;
-  }
+	padding: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 30px;
 
-@media (min-width: 1080px){
-	  /* Cards */
-	  .cards {
-		flex-direction: row;
-		gap: 2rem;
-	  }
-}
+	height: 48px;
+  }
+  
+  .footer-center {
+	flex-grow: 1;
+	background-color: #000;
+	margin: 0 8px;
+	overflow: hidden;
+	position: relative;
+	height: 48px;
+
+	border-radius: 30px;
+	padding: 16px;
+  }
+  
+  .marquee {
+	display: inline-block;
+	white-space: nowrap;
+	color: red;
+	font-size: 14px;
+	position: absolute;
+	animation: scroll 10s linear infinite;
+  }
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  .footer-credits {
+	margin-top: 8px;
+	width: 340px;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 30px;
+	padding: 12px;
+  }
+  

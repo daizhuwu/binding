@@ -1,78 +1,83 @@
-<html>
-	<head>
-		<title>Binding</title>
-		<link href="reset.css" rel="stylesheet">
-		<link href="common.css" rel="stylesheet">
-		<link href="index.css" rel="stylesheet">
-		<!-- <link href="../asset/direction2.css" rel="stylesheet"> -->
-		<!-- <link href="../asset/direction3.css" rel="stylesheet"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color As Material</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-		<!-- direction 1 font -->
-		<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <header>
+    <p class="header-left">Typography & Interaction</p>
+    <p class="header-right">(2024)</p>
+  </header>
 
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<!-- title heading  -->
+  <main>
+    <section class="title-container">
+      <h1>
+        <span class="line">
+          <span class="highlight-red">(</span><span class="highlight-blue">C</span><span class="highlight-red">)</span>olor
+        </span>
+        <hr>
+        <span class="line">
+          <span class="highlight-red">(</span><span class="highlight-blue">A</span><span class="highlight-red">)</span>s
+        </span>
+        <hr>
+        <span class="line">
+          <span class="highlight-red">(</span><span class="highlight-blue">M</span><span class="highlight-red">)</span>aterial
+        </span>
+      </h1>
+      <p class="subtitle">
+        <span class="page-number">● 00/03</span>
+        <span class="home-link">(Home)</span>
+      </p>
+    </section>
 
-		<!-- direction 2 font -->
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bigshot+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Colophon Section -->
+    <section class="colophon-container">
+      <p class="arrow-left">↓</p>
+      <p class="colophon-text">COLOPHON</p>
+      <p class="arrow-right">↓</p>
+    </section>
+    <article class="colophon-description">
+      <p>
+        The articles Everyday Color Theory, Gradients: The Colorful Design Trend Aiming to Soothe These Anxious Times, and Color politics of design explore how color impacts perception, emotion, and culture.
+      </p>
+      <footer>
+        <span class="colophon-number">(00)</span>
+        <button class="colophon-button">Colophon</button>
+      </footer>
+    </article>
+  </main>
 
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bigshot+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Navigation Section -->
+  <nav class="color-nav">
+    <a href="#color-theory" class="nav-item color-theory">
+      <span class="nav-number">(01)</span>
+      <span class="nav-text">Color<br>Theory</span>
+    </a>
+    <a href="#color-gradient" class="nav-item color-gradient">
+      <span class="nav-number">(02)</span>
+      <span class="nav-text">Color<br>Gradient</span>
+    </a>
+    <a href="#color-politics" class="nav-item color-politics">
+      <span class="nav-number">(03)</span>
+      <span class="nav-text">Color<br>Politics</span>
+    </a>
+  </nav>
 
-		<!-- direction 3 font -->
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bigshot+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bigshot+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bigshot+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=GFS+Didot&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-	</head>
-	<body>
-		<div id="container">
-			<header>
-				<h1>Color as Materials</h1>
-				<p id="intro">
-					The articles *Everyday Color Theory,* *Gradients: The Colorful Design Trend Aiming to Soothe These Anxious Times,* and *Color politics of design* explore how color impacts perception, emotion, and culture. Cassidy highlights its subjectivity and cultural ties, Alioto examines gradients as tools for calm in anxious times, and *color politics* emphasizes its historical and societal power. UX designers can learn to use color thoughtfully, balancing emotional impact with cultural awareness to create meaningful and inclusive designs.
-				</p>
-			</header>
-		
-			<!-- <main class="cards">
-				<div class="card blue">
-					<div class="dot"></div>
-					<h2>Color Theory</h2>
-				</div>
-				
-				<div class="card green">
-					<div class="dot"></div>
-					<h2>Color Gradient</h2>
-				</div>
-
-				<div class="card red">
-					<div class="dot"></div>
-					<h2>Color Politics</h2>
-				</div>
-			</main> -->
-
-			<main class="cards">
-				<a href="article1.html" class="card blue">
-					<div class="dot"></div>
-					<h2>Color Theory</h2>
-				</a>
-				
-				<a href="article2.html" class="card green">
-					<div class="dot"></div>
-					<h2>Color Gradient</h2>
-				</a>
-
-				<a href="article3.html" class="card red">
-					<div class="dot"></div>
-					<h2>Color Politics</h2>
-				</a>
-			</main>
-
-			<footer>
-				<p>Jennifer Wu</p>
-				<p>Typography & Interaction</p>
-			</footer>
-		</div>
-	</body>
+  <!-- Footer Section -->
+  <footer>
+    <section class="footer-container">
+      <p class="footer-item footer-left">(Raw)</p>
+      <p class="footer-center">
+        <span class="marquee">let’s talk about color as material</span>
+      </p>
+      <p class="footer-item footer-right">(Materials)</p>
+    </section>
+    <p class="footer-credits">Created by Jennifer Wu</p>
+  </footer>
+</body>
 </html>
