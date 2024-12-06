@@ -50,11 +50,13 @@
 	padding: 20px;
 	text-align: center;
 	margin-bottom: 16px;
-  }
+	}
+
   
   .title-container h1 {
-	font-size: 36px;
+	font-size: 50px;
 	line-height: 1.4;
+	font-family: "Zen Dots", sans-serif;
   }
   
   .line {
@@ -276,4 +278,96 @@
 	border-radius: 30px;
 	padding: 12px;
   }
-  
+
+/* Desktop adjustments for 1280px width */
+@media (min-width: 1280px) {
+  body {
+    padding: 40px;
+  }
+
+  header {
+    width: 1200px;
+    margin-bottom: 16px;
+  }
+
+  .title-container {
+    width: 1200px;
+    padding: 40px;
+    margin-bottom: 32px;
+  }
+
+  .title-container h1 {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .colophon-container {
+    width: 1200px;
+    margin: 32px 0;
+    padding: 20px 0;
+  }
+
+  .colophon-text {
+    font-size: 24px;
+  }
+
+  .colophon-description {
+    width: 1200px;
+    padding: 32px;
+    margin: 16px 0;
+  }
+
+  .colophon-description p {
+    font-size: 28px;
+  }
+
+  .color-nav {
+    width: 1200px;
+    gap: 16px;
+		margin-bottom: 32px;
+		flex-direction: row;
+  }
+
+  .nav-item {
+    padding: 40px;
+		height: 360px;
+		width: 33%;
+  }
+
+  .nav-number {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+
+  .nav-text {
+    font-size: 68px;
+  }
+
+  .footer-container {
+    width: 1200px;
+    margin-top: 0px;
+  }
+
+	
+	.footer-item {
+		padding: 14px;
+		font-size: 20px;
+		}
+		
+	.footer-center {
+	padding: 10px;
+	}
+	
+	.marquee {
+	font-size: 24px;
+	}
+
+  .footer-credits {
+    width: 1200px;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
